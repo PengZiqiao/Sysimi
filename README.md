@@ -29,7 +29,21 @@ npm install -g playwright-cli
 npx playwright install
 ```
 
-### 3. 配置环境变量
+### 3. 安装前端 UI (Deep Agents UI)
+
+```bash
+# 克隆 Deep Agents UI 仓库
+git clone https://github.com/langchain-ai/deep-agents-ui.git
+
+# 进入 UI 目录并安装依赖
+cd deep-agents-ui
+yarn install
+
+# 回到项目根目录
+cd ..
+```
+
+### 4. 配置环境变量
 
 复制 `.env` 文件并配置必要的 API keys：
 
@@ -46,7 +60,7 @@ LANGCHAIN_API_KEY=your-langchain-api-key
 LANGCHAIN_PROJECT=sysimi
 ```
 
-### 4. 配置 LLM 提供商
+### 5. 配置 LLM 提供商
 
 默认情况下，系统使用 NVIDIA 作为 LLM 提供商。您可以通过修改 `config.yaml` 文件来选择不同的 LLM 提供商：
 
@@ -72,7 +86,7 @@ model:
 
 确保在 `.env` 文件中配置相应的 API key。
 
-### 5. 一键启动所有服务
+### 6. 一键启动所有服务
 
 ```bash
 bash start_all.sh
@@ -82,12 +96,12 @@ bash start_all.sh
 - LangGraph 后端服务（端口 2024）
 - Deep Agents UI 前端（端口 3000）
 
-### 6. 访问应用
+### 7. 访问应用
 
 - 前端界面：http://localhost:3000
 - 后端 API：http://localhost:2024
 
-### 7. 停止所有服务
+### 8. 停止所有服务
 
 ```bash
 bash stop_all.sh
@@ -111,7 +125,7 @@ sysimi/
 ├── logs/                # 日志目录
 ├── start_all.sh         # 一键启动脚本
 ├── stop_all.sh          # 一键停止脚本
-└── deep-agents-ui/     # 前端项目
+└── deep-agents-ui/     # 前端项目（Deep Agents UI）
 ```
 
 ## 查看日志

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# 关闭所有正在运行的服务
+bash stop_all.sh
+
 # 激活虚拟环境
 source ./venv/bin/activate
 

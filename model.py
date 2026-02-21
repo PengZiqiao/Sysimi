@@ -10,7 +10,7 @@ with open("config.yaml", 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
 
 # 从配置文件提取模型配置
-provider = "nvidia"
+provider = "zhipu"
 provider_config = config[provider]
 base_url = provider_config['base_url']
 model = provider_config['model']

@@ -1,4 +1,5 @@
 from langchain_tavily import TavilySearch
+from langchain_community.tools import ShellTool
 
 tavily_search = TavilySearch(
     max_results=5,
@@ -9,4 +10,6 @@ tavily_search = TavilySearch(
     search_depth="basic"
 )
 
-tools = [tavily_search]
+shell_tool = ShellTool()
+
+tools = [tavily_search, shell_tool]

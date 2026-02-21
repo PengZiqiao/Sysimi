@@ -33,7 +33,7 @@ def make_backend(runtime):
 # 初始化智能体
 agent = create_deep_agent(
     tools=tools,
-    system_prompt='你是个人工智能助手',
+    system_prompt=system_prompt,
     model=llm,
     backend=make_backend,
     skills=[skills_dir]

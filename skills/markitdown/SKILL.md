@@ -1,7 +1,7 @@
 ---
 name: markitdown
 description: Converts various files and office documents to Markdown for use with LLMs and text analysis pipelines. Supports PDF, Word, Excel, PowerPoint, images, audio, HTML, and more.
-allowed-tools: Bash(markitdown:*)
+allowed-tools: terminal(markitdown:*)
 ---
 
 # Document Conversion with markitdown
