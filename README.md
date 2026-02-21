@@ -24,6 +24,7 @@ pip install -r requirements.txt
 ```bash
 # 安装 playwright-cli
 npm install -g playwright-cli
+playwright-cli install
 
 # 安装浏览器依赖
 npx playwright install
